@@ -3,8 +3,10 @@ A robust Python project demonstrating the deployment of a scikit-learn model (Ca
 
 
 FastAPI ML Model Deployment: Housing Price Predictor robust, end-to-end Python project demonstrating how to deploy a trained Machine Learning model as a fast, accessible, and documented REST API using FastAPI and scikit-learn.
-✨ Project OverviewThis repository contains the necessary scripts to:Train a Random Forest Regressor model using the California Housing dataset. Serialize and save the trained model using joblib. Load the saved model into a FastAPI application. Expose a /predict endpoint to receive house feature inputs and return a predicted median house value.
-🚀 Getting StartedFollow these steps to set up and run the API on your local machine.
+
+Project OverviewThis repository contains the necessary scripts to:Train a Random Forest Regressor model using the California Housing dataset. Serialize and save the trained model using joblib. Load the saved model into a FastAPI application. Expose a /predict endpoint to receive house feature inputs and return a predicted median house value.
+
+Getting StartedFollow these steps to set up and run the API on your local machine.
 Prerequisites
 You need Python 3.8+ installed.
 1. Clone the RepositoryBashgit clone https://github.com/YourUsername/fastapi-ml-deployment-housing.git
@@ -23,7 +25,8 @@ This script will output a file named california_housing_model.joblib.
 Running the API ServerStart the FastAPI server using uvicorn. The --reload flag is useful for development.Bashuvicorn main: app --reload
 The server will start at http://127.0.0.1:8000.
 
-API Endpoints & Documentation: FastAPI automatically generates interactive documentation for testing and exploration. Interactive Documentation (Swagger UI)Open your browser and navigate to:👉 http://127.0.0.1:8000/docsYou can use this interface to test the /predict endpoint directly.
+API Endpoints & Documentation: FastAPI automatically generates interactive documentation for testing and exploration. 
+Interactive Documentation (Swagger UI)Open your browser and navigate to:👉 http://127.0.0.1:8000/docsYou can use this interface to test the /predict endpoint directly.
 
 Health CheckMethodEndpointDescriptionGET/Returns a welcome message (API status check).
 Prediction EndpointMethodEndpointDescriptionPOST/predictPredicts the median house value based on input features.Input Payload Example (/predict):
@@ -48,4 +51,5 @@ Successful Response: JSON{
 
 
 Technology Stack: Python 3.10+, API Framework: FastAPI (for high performance and automatic documentation), Web Server: Uvicorn (ASGI server), Machine Learning: scikit-learn (RandomForestRegressor), Data Handling: Pandas, Serialization: Joblib
+
 This project is licensed under the MIT License - see the LICENSE file for details.
