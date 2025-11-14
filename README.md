@@ -26,7 +26,7 @@ Running the API ServerStart the FastAPI server using uvicorn. The --reload flag 
 The server will start at http://127.0.0.1:8000.
 
 API Endpoints & Documentation: FastAPI automatically generates interactive documentation for testing and exploration. 
-Interactive Documentation (Swagger UI)Open your browser and navigate to:👉 http://127.0.0.1:8000/docsYou can use this interface to test the /predict endpoint directly.
+Interactive Documentation (Swagger UI)https://twisted-grateful-cameron-peripheral.trycloudflare.com/docs#/default/predict_price_predict_post 
 
 Health CheckMethodEndpointDescriptionGET/Returns a welcome message (API status check).
 Prediction EndpointMethodEndpointDescriptionPOST/predictPredicts the median house value based on input features.Input Payload Example (/predict):
