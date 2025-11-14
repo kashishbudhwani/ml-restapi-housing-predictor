@@ -22,11 +22,12 @@ pip install -r requirements.txt
 3. Train the ModelYou must train the model and save the .joblib file before running the API. Bash python train.py
 This script will output a file named california_housing_model.joblib.
 
-Running the API ServerStart the FastAPI server using uvicorn. The --reload flag is useful for development.Bashuvicorn main: app --reload
-The server will start at http://127.0.0.1:8000.
+Running the API ServerStart the FastAPI server using uvicorn. The --reload flag is useful for development.
+Bash uvicorn main: app --reload
+The server will start 
 
 API Endpoints & Documentation: FastAPI automatically generates interactive documentation for testing and exploration. 
-Interactive Documentation (Swagger UI)https://twisted-grateful-cameron-peripheral.trycloudflare.com/docs#/default/predict_price_predict_post 
+Interactive Documentation (Swagger UI) https://heated-usb-compile-preliminary.trycloudflare.com/docs
 
 Health CheckMethodEndpointDescriptionGET/Returns a welcome message (API status check).
 Prediction EndpointMethodEndpointDescriptionPOST/predictPredicts the median house value based on input features.Input Payload Example (/predict):
